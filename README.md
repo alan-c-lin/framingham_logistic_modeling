@@ -1,4 +1,4 @@
-# Framingham Logistic Modeling
+# Predicting 30-Year Survival in the Framingham Cohort: Classical and Regularized Logistic Models
 
 This project analyzes the Framingham Heart Study dataset using logistic regression and other classification methods. The goal is to model cardiovascular disease risk and compare performance across multiple approaches. For this project, we use a course-provided dataset from my time at the University of Washington to illustrate these methods; the focus is on model application, comparison, and interpretation rather than data collection.
 
