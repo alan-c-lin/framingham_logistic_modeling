@@ -33,7 +33,7 @@ library(ggplot2)
 library(caret)
 
 # Load dataset
-data = read.csv("framingham.csv")
+data = read.csv("data/framingham.csv")
 
 # Show first 5 entries of dataset
 head(data, 5)
@@ -323,6 +323,8 @@ ggplot(results, aes(x = Model, y = Accuracy, fill = Model)) +
   theme(legend.position = "none")
 ```
 
+**Figure 1:** Bar chart comparing the accuracy of each classification method.
+
 Another important metric we can compute is a confusion matrix to tell us the number of false negatives and false positives the models classified, which enhances the accuracy metric we calculated above. We now compute the confusion matrix for each of the four models and present heatmaps to visualize the quality of our classifications. In the confusion matrices, 1 indicates death and 0 indicates survival, consistent with our data encoding.
 
 ```{r}
@@ -358,6 +360,8 @@ ggplot(cm_all, aes(x = Predicted, y = Actual, fill = Freq)) +
   labs(title = "Confusion Matrices for Different Models") +
   theme_minimal(base_size = 14)
 ```
+
+**Figure 2:** Confsion matrix heatmap for all classification methods.
 
 The accuracy scores were very close, with the plain logistic regression slightly outperforming the penalized models. The confusion matrices confirm that misclassifications are rare and distributed similarly across models.
 
