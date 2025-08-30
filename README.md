@@ -22,7 +22,10 @@ This project analyzes the Framingham Heart Study dataset using logistic regressi
 - RStudio (recommended)  
 - R packages: `glmnet`, `leaps`, `ggplot2`, `caret`
 
-You can install the R packages with: `install.packages(c("glmnet", "leaps", "ggplot2", "caret"))`
+You can install the R packages with: 
+```{r}
+install.packages(c("glmnet", "leaps", "ggplot2", "caret"))
+```
 
 ## How to Use
 
